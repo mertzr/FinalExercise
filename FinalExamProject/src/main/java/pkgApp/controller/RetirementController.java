@@ -41,6 +41,8 @@ public class RetirementController implements Initializable {
 	public void btnCalculate(ActionEvent event) {
 		
 		//	TODO: Call AmountToSave and TotalAmountSaved and populate 
+		AmountToSave();
+		TotalAmountSaved();
 		
 	}
 	

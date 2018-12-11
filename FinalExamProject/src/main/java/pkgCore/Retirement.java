@@ -11,6 +11,57 @@ public class Retirement {
 	
 	//TODO: Build the contructor, getters and setters for the attributes above.
 	
+	public Retirement() {
+	}
+	
+	public int getiYearsToWork() {
+		return iYearsToWork;
+	}
+
+	public void setiYearsToWork(int iYearsToWork) {
+		this.iYearsToWork = iYearsToWork;
+	}
+
+	public double getdAnnualReturnWorking() {
+		return dAnnualReturnWorking;
+	}
+
+	public void setdAnnualReturnWorking(double dAnnualReturnWorking) {
+		this.dAnnualReturnWorking = dAnnualReturnWorking;
+	}
+
+	public int getiYearsRetired() {
+		return iYearsRetired;
+	}
+	
+	public void setiYearsRetired(int iYearsRetired) {
+		this.iYearsRetired = iYearsRetired;
+	}
+
+	public double getdAnnualReturnRetired() {
+		return dAnnualReturnRetired;
+	}
+
+	public void setdAnnualReturnRetired(double dAnnualReturnRetired) {
+		this.dAnnualReturnRetired = dAnnualReturnRetired;
+	}
+
+	public double getdRequiredIncome() {
+		return dRequiredIncome;
+	}
+
+	public void setdRequiredIncome(double dRequiredIncome) {
+		this.dRequiredIncome = dRequiredIncome;
+	}
+
+	public double getdMonthlySSI() {
+		return dMonthlySSI;
+	}
+
+	public void setdMonthlySSI(double dMonthlySSI) {
+		this.dMonthlySSI = dMonthlySSI;
+	}
+
 	public double AmountToSave()
 	{
 		//TODO: Determine the amount to save each month based on TotalAmountSaved, YearsToWork
