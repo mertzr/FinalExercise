@@ -1,5 +1,7 @@
 package pkgCore;
 
+import org.apache.poi.ss.formula.functions.Finance;
+
 public class Retirement {
 
 	private int iYearsToWork;
@@ -12,6 +14,7 @@ public class Retirement {
 	//TODO: Build the contructor, getters and setters for the attributes above.
 	
 	public Retirement() {
+		
 	}
 	
 	public int getiYearsToWork() {
@@ -62,20 +65,24 @@ public class Retirement {
 		this.dMonthlySSI = dMonthlySSI;
 	}
 
+	public double TotalAmountSaved() 
+	{
+		//	TODO: Determine amount to be saved based on Monthly SSI, Required Income, Annual return during retirement
+		//		and number of years retired.
+		//
+		
+		
+		return (getdRequiredIncome() - getdMonthlySSI())/((getdAnnualReturnRetired() / 12)*Math.pow(1 + (getdAnnualReturnRetired()/12), (getiYearsRetired()*12) ));
+	}
+	
 	public double AmountToSave()
 	{
 		//TODO: Determine the amount to save each month based on TotalAmountSaved, YearsToWork
 		//		and Annual return while working
 		
-		
-		return 0;
+		double TAMTS=TotalAmountSaved();
+		return -(Finance.pmt(getdAnnualReturnWorking()/12, getiYearsToWork()*12, 0, TAMTS));
 	}
 	
-	public double TotalAmountSaved()
-	{
-		//	TODO: Determine amount to be saved based on Monthly SSI, Required Income, Annual return during retirement
-		//		and number of years retired.
-		//
-		return 0;
-	}
+	
 }

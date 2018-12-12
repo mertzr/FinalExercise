@@ -8,7 +8,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
 import pkgApp.RetirementApp;
-
+import javafx.scene.control.*;
 public class RetirementController implements Initializable {
 
 		
@@ -16,6 +16,27 @@ public class RetirementController implements Initializable {
 	
 	@FXML
 	private TextField txtYearsToWork;
+	
+	@FXML
+	private TextField txtAnnualReturnWork;
+	
+	@FXML
+	private TextField txtYearsRetired;
+	
+	@FXML
+	private TextField txtAnnualReturnRetired;
+	
+	@FXML
+	private TextField txtRequiredIncome;
+	
+	@FXML
+	private TextField txtMonthlySSI;
+	
+	@FXML 
+	private Label labelSaveEachMonth;
+	
+	@FXML 
+	private Label labelWhatYouNeed;
 	
 
 	public RetirementApp getMainApp() {
@@ -32,7 +53,12 @@ public class RetirementController implements Initializable {
 	
 	@FXML
 	public void btnClear(ActionEvent event) {
-		System.out.println("Clear pressed");
+		txtYearsToWork.setText("");
+		txtAnnualReturnWork.setText("");
+		txtYearsRetired.setText("");
+		txtAnnualReturnRetired.setText("");
+		txtRequiredIncome.setText("");
+		txtMonthlySSI.setText("");
 		
 		//	TODO: Clear all the text inputs
 	}
@@ -41,8 +67,8 @@ public class RetirementController implements Initializable {
 	public void btnCalculate(ActionEvent event) {
 		
 		//	TODO: Call AmountToSave and TotalAmountSaved and populate 
-		AmountToSave();
-		TotalAmountSaved();
+		
+		
 		
 	}
 	
