@@ -83,7 +83,6 @@ public class Retirement {
 		//		and Annual return while working
 		
 		
-		
 		double TAMTS=((getdRequiredIncome() - getdMonthlySSI())/(getdAnnualReturnRetired() / 12)*(1 - Math.pow(1 + (getdAnnualReturnRetired()/12) , -(getiYearsRetired()*12))));
 		return -FinanceLib.pmt(getdAnnualReturnWorking()/12, getiYearsToWork()*12, 0 , TAMTS, false);
 	}
