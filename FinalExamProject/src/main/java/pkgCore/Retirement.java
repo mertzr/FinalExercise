@@ -80,8 +80,10 @@ public class Retirement {
 		//TODO: Determine the amount to save each month based on TotalAmountSaved, YearsToWork
 		//		and Annual return while working
 		
-		//double TAMTS=TotalAmountSaved();
-		return -(getdAnnualReturnWorking()/12)* (0 * Math.pow(1 + (getdAnnualReturnWorking()/12), getiYearsToWork()*12)+TotalAmountSaved() / ((1 + (getdAnnualReturnWorking()/12)*0) * (Math.pow((1 + (getdAnnualReturnWorking()/12)),getiYearsToWork()*12) - 1)));
+		
+		
+		double TAMTS=((getdRequiredIncome() - getdMonthlySSI())/(getdAnnualReturnRetired() / 12)*(1 - Math.pow(1 + (getdAnnualReturnRetired()/12) , -(getiYearsRetired()*12))));
+		return -FinanceLib.pmt(getdAnnualReturnWorking()/12, getiYearsToWork()*12, 0 , TAMTS, false);
 	}
 	
 	
