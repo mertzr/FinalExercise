@@ -10,12 +10,12 @@ public class Retirement {
 	
 	RetirementController rtc = new RetirementController();
 
-	private int iYearsToWork=Integer.parseInt(rtc.txtYearsToWork.getText());
-	private double dAnnualReturnWorking=Double.parseDouble(rtc.txtAnnualReturnWork.getText());
-	private int iYearsRetired=Integer.parseInt(rtc.txtYearsRetired.getText());
-	private double dAnnualReturnRetired=Double.parseDouble(rtc.txtAnnualReturnRetired.getText());
-	private double dRequiredIncome=Double.parseDouble(rtc.txtRequiredIncome.getText());
-	private double dMonthlySSI=Double.parseDouble(rtc.txtMonthlySSI.getText());
+	private int iYearsToWork=Integer.parseInt(rtc.getTxtYearsToWork().getText());
+	private double dAnnualReturnWorking=Double.parseDouble(rtc.getTxtAnnualReturnWork().getText());
+	private int iYearsRetired=Integer.parseInt(rtc.getTxtYearsRetired().getText());
+	private double dAnnualReturnRetired=Double.parseDouble(rtc.getTxtAnnualReturnRetired().getText());
+	private double dRequiredIncome=Double.parseDouble(rtc.getTxtRequiredIncome().getText());
+	private double dMonthlySSI=Double.parseDouble(rtc.getTxtMonthlySSI().getText());
 	
 	//TODO: Build the contructor, getters and setters for the attributes above.
 	

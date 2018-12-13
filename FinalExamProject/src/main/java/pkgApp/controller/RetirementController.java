@@ -16,28 +16,28 @@ public class RetirementController implements Initializable {
 	private RetirementApp mainApp = null;
 	
 	@FXML
-	public TextField txtYearsToWork;
+	private TextField txtYearsToWork;
 	
 	@FXML
-	public TextField txtAnnualReturnWork;
+	private TextField txtAnnualReturnWork;
 	
 	@FXML
-	public TextField txtYearsRetired;
+	private TextField txtYearsRetired;
 	
 	@FXML
-	public TextField txtAnnualReturnRetired;
+	private TextField txtAnnualReturnRetired;
 	
 	@FXML
-	public TextField txtRequiredIncome;
+	private TextField txtRequiredIncome;
 	
 	@FXML
-	public TextField txtMonthlySSI;
+	private TextField txtMonthlySSI;
 	
 	@FXML 
-	public Label labelSaveEachMonth;
+	private Label labelSaveEachMonth;
 	
 	@FXML 
-	public Label labelWhatYouNeed;
+	private Label labelWhatYouNeed;
 	
 
 	public RetirementApp getMainApp() {
@@ -52,6 +52,71 @@ public class RetirementController implements Initializable {
 	public void initialize(URL location, ResourceBundle resources) {		
 	}
 	
+	
+	@FXML
+	public TextField getTxtYearsToWork() {
+		return txtYearsToWork;
+	}
+	
+	public void setTxtYearsToWork(TextField txtYearsToWork) {
+		this.txtYearsToWork = txtYearsToWork;
+	}
+	@FXML
+	public TextField getTxtAnnualReturnWork() {
+		return txtAnnualReturnWork;
+	}
+	
+	public void setTxtAnnualReturnWork(TextField txtAnnualReturnWork) {
+		this.txtAnnualReturnWork = txtAnnualReturnWork;
+	}
+	@FXML
+	public TextField getTxtYearsRetired() {
+		return txtYearsRetired;
+	}
+	
+	public void setTxtYearsRetired(TextField txtYearsRetired) {
+		this.txtYearsRetired = txtYearsRetired;
+	}
+	@FXML
+	public TextField getTxtAnnualReturnRetired() {
+		return txtAnnualReturnRetired;
+	}
+
+	public void setTxtAnnualReturnRetired(TextField txtAnnualReturnRetired) {
+		this.txtAnnualReturnRetired = txtAnnualReturnRetired;
+	}
+	@FXML
+	public TextField getTxtRequiredIncome() {
+		return txtRequiredIncome;
+	}
+
+	public void setTxtRequiredIncome(TextField txtRequiredIncome) {
+		this.txtRequiredIncome = txtRequiredIncome;
+	}
+	@FXML
+	public TextField getTxtMonthlySSI() {
+		return txtMonthlySSI;
+	}
+
+	public void setTxtMonthlySSI(TextField txtMonthlySSI) {
+		this.txtMonthlySSI = txtMonthlySSI;
+	}
+	@FXML
+	public Label getLabelSaveEachMonth() {
+		return labelSaveEachMonth;
+	}
+
+	public void setLabelSaveEachMonth(Label labelSaveEachMonth) {
+		this.labelSaveEachMonth = labelSaveEachMonth;
+	}
+	@FXML
+	public Label getLabelWhatYouNeed() {
+		return labelWhatYouNeed;
+	}
+
+	public void setLabelWhatYouNeed(Label labelWhatYouNeed) {
+		this.labelWhatYouNeed = labelWhatYouNeed;
+	}
 	@FXML
 	public void btnClear(ActionEvent event) {
 		txtYearsToWork.setText("");
@@ -78,5 +143,4 @@ public class RetirementController implements Initializable {
 		
 		
 	}
-	
 }
