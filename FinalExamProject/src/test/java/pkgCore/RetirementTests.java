@@ -33,9 +33,11 @@ public class RetirementTests {
 		Retirement rt = new Retirement();
 		rt.setdAnnualReturnWorking(dAnnualReturn);
 		rt.setiYearsToWork(iYearsToWork);
-		rt.AmountToSave();
+		
 		
 		assertEquals(dExpected,rt.AmountToSave(),.01);
+		
+	
 		
 	}
 
