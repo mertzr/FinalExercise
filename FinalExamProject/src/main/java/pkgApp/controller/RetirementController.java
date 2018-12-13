@@ -52,6 +52,7 @@ public class RetirementController implements Initializable {
 	public void initialize(URL location, ResourceBundle resources) {		
 	}
 	
+	
 	@FXML
 	public void btnClear(ActionEvent event) {
 		txtYearsToWork.setText("");
@@ -65,13 +66,14 @@ public class RetirementController implements Initializable {
 		
 		//	TODO: Clear all the text inputs
 	}
-	
 	@FXML
 	public void btnCalculate(ActionEvent event) {
 		
 		//	TODO: Call AmountToSave and TotalAmountSaved and populate 
 		
 		Retirement rt = new Retirement();
+		
+		
 		rt.setiYearsToWork(Integer.parseInt(txtYearsToWork.getText()));
 		rt.setdAnnualReturnWorking(Double.parseDouble(txtAnnualReturnWork.getText()));
 		rt.setiYearsRetired(Integer.parseInt(txtYearsRetired.getText()));
