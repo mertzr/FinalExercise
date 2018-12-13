@@ -2,14 +2,20 @@ package pkgCore;
 
 import org.apache.poi.ss.formula.functions.*;
 
-public class Retirement {
+import pkgApp.controller.RetirementController;
 
-	private int iYearsToWork;
-	private double dAnnualReturnWorking;
-	private int iYearsRetired;
-	private double dAnnualReturnRetired;
-	private double dRequiredIncome;
-	private double dMonthlySSI;
+
+
+public class Retirement {
+	
+	RetirementController rtc = new RetirementController();
+
+	private int iYearsToWork=Integer.parseInt(rtc.txtYearsToWork.getText());
+	private double dAnnualReturnWorking=Double.parseDouble(rtc.txtAnnualReturnWork.getText());
+	private int iYearsRetired=Integer.parseInt(rtc.txtYearsRetired.getText());
+	private double dAnnualReturnRetired=Double.parseDouble(rtc.txtAnnualReturnRetired.getText());
+	private double dRequiredIncome=Double.parseDouble(rtc.txtRequiredIncome.getText());
+	private double dMonthlySSI=Double.parseDouble(rtc.txtMonthlySSI.getText());
 	
 	//TODO: Build the contructor, getters and setters for the attributes above.
 	

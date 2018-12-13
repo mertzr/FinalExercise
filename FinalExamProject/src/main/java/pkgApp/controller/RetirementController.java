@@ -16,28 +16,28 @@ public class RetirementController implements Initializable {
 	private RetirementApp mainApp = null;
 	
 	@FXML
-	private TextField txtYearsToWork;
+	public TextField txtYearsToWork;
 	
 	@FXML
-	private TextField txtAnnualReturnWork;
+	public TextField txtAnnualReturnWork;
 	
 	@FXML
-	private TextField txtYearsRetired;
+	public TextField txtYearsRetired;
 	
 	@FXML
-	private TextField txtAnnualReturnRetired;
+	public TextField txtAnnualReturnRetired;
 	
 	@FXML
-	private TextField txtRequiredIncome;
+	public TextField txtRequiredIncome;
 	
 	@FXML
-	private TextField txtMonthlySSI;
+	public TextField txtMonthlySSI;
 	
 	@FXML 
-	private Label labelSaveEachMonth;
+	public Label labelSaveEachMonth;
 	
 	@FXML 
-	private Label labelWhatYouNeed;
+	public Label labelWhatYouNeed;
 	
 
 	public RetirementApp getMainApp() {
@@ -70,12 +70,6 @@ public class RetirementController implements Initializable {
 	public void btnCalculate(ActionEvent event) {
 		
 		//	TODO: Call AmountToSave and TotalAmountSaved and populate 
-		Integer.parseInt(txtYearsToWork.getText());
-		Double.parseDouble(txtAnnualReturnWork.getText());
-		Integer.parseInt(txtYearsRetired.getText());
-		Double.parseDouble(txtAnnualReturnRetired.getText());
-		Double.parseDouble(txtRequiredIncome.getText());
-		Double.parseDouble(txtMonthlySSI.getText());
 		
 		Retirement rt = new Retirement();
 		labelSaveEachMonth.setText(String.valueOf(rt.AmountToSave()));
