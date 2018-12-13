@@ -60,6 +60,8 @@ public class RetirementController implements Initializable {
 		txtAnnualReturnRetired.setText("");
 		txtRequiredIncome.setText("");
 		txtMonthlySSI.setText("");
+		labelSaveEachMonth.setText("");
+		labelWhatYouNeed.setText("");
 		
 		//	TODO: Clear all the text inputs
 	}
