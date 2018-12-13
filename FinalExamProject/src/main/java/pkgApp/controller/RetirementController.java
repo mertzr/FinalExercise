@@ -79,6 +79,8 @@ public class RetirementController implements Initializable {
 		rt.setdRequiredIncome(Double.parseDouble(txtRequiredIncome.getText()));
 		rt.setdMonthlySSI(Double.parseDouble(txtMonthlySSI.getText()));
 		
+		
+		
 		labelWhatYouNeed.setText(String.valueOf(rt.TotalAmountSaved()));
 		labelSaveEachMonth.setText(String.valueOf(rt.AmountToSave()));
 		

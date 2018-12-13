@@ -78,8 +78,8 @@
             <TextField text= "Rate in Decimal Form :)" fx:id="txtAnnualReturnRetired" prefHeight="25.0" prefWidth="62.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
             <TextField fx:id="txtRequiredIncome" prefHeight="25.0" prefWidth="62.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
             <TextField fx:id="txtMonthlySSI" prefHeight="25.0" prefWidth="62.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
-            <Label fx:id="labelWhatYouNeed" prefHeight="25.0" prefWidth="62.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <Label fx:id="labelSaveEachMonth" prefHeight="25.0" prefWidth="62.0" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+            <Label fx:id="labelWhatYouNeed" prefHeight="25.0" prefWidth="170.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="labelSaveEachMonth" prefHeight="25.0" prefWidth="170.0" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
             
          </children>
       </GridPane>
