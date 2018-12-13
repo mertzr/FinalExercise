@@ -72,8 +72,16 @@ public class RetirementController implements Initializable {
 		//	TODO: Call AmountToSave and TotalAmountSaved and populate 
 		
 		Retirement rt = new Retirement();
-		labelSaveEachMonth.setText(String.valueOf(rt.AmountToSave()));
+		rt.setiYearsToWork(Integer.parseInt(txtYearsToWork.getText()));
+		rt.setdAnnualReturnWorking(Double.parseDouble(txtAnnualReturnWork.getText()));
+		rt.setiYearsRetired(Integer.parseInt(txtYearsRetired.getText()));
+		rt.setdAnnualReturnRetired(Double.parseDouble(txtAnnualReturnRetired.getText()));
+		rt.setdRequiredIncome(Double.parseDouble(txtRequiredIncome.getText()));
+		rt.setdMonthlySSI(Double.parseDouble(txtMonthlySSI.getText()));
+		
 		labelWhatYouNeed.setText(String.valueOf(rt.TotalAmountSaved()));
+		labelSaveEachMonth.setText(String.valueOf(rt.AmountToSave()));
+		
 	
 		
 		
