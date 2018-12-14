@@ -116,7 +116,7 @@ public class RetirementController implements Initializable {
 			txtRequiredIncome.setText("");
 			txtMonthlySSI.setText("");
 			labelSaveEachMonth.setText("Please Enter Valid Entries");
-			labelWhatYouNeed.setText("Please Enter Valid Entries");
+			labelWhatYouNeed.setText("What he said^");
 		}
 	}
 }
